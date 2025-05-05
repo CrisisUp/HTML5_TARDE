@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+</head>
+<body>
+    <h1>Cadastre-se!</h1>
+    <form action="">
+        Nome: 
+        <input type="text" name="nome"><br><br>
+        Nascimento: 
+        <input type="date" name="data_nascimento"> <br> <br>
+        Sexo biológico: <br>
+        <input type="radio" name="sexo" value="Masculino"> Masculino <br>
+        <input type="radio" name="sexo" value="Feminino"> Feminino <br>
+
+        <h2>Interesses:</h2>
+        <input type="checkbox" name="interesses">Séries <br>
+        <input type="checkbox" name="interesses">Filmes <br>
+        <input type="checkbox" name="interesses">Restaurantes <br>
+        <input type="checkbox" name="interesses">Teatro <br>
+        <input type="checkbox" name="interesses">Passeios <br>
+
+        <h3>Estado:</h3>
+        <select name="estado">
+            <option value="SP">SP</option>
+            <option value="RJ">RJ</option>
+            <option value="ES">ES</option>
+            <option value="MG">MG</option>
+            <option value="PR">PR</option>
+        </select>
+
+        <h3>Observações:</h3>
+        <textarea name=""></textarea> <br>
+
+        <input type="file" accept="image"> <br>
+
+        <input type="submit" value="cadastro">
+        
+    </form>
+</body>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trilha HTML - Dio</title>
+    <style>
+        .row {
+            margin: 5px;
+        }
+
+        label {
+            width: 100px;
+            text-align: right;
+            display: inline-block;
+            padding-right: 5px;
+        }
+
+        fieldset {
+            margin: 15px 0;
+            border-radius: 10px;
+            border-color: aquamarine;
+        }
+
+        table tr:nth-child(even) {
+            color: #000;
+            background-color: lightpink;
+        }
+
+        table tr:hover td {
+            background-color: rgb(143, 141, 172);
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body style="background-color: #000;color: #fff;font-size: 21px;">
+    <h1>Formulário de Cadastro</h1>
+
+    <fieldset>
+        <legend>Dados Pessoais</legend>
+        <div class="row">
+            <label>Nome:</label><input type="text" />
+            <label>E-mail:</label><input type="text" />
+        </div>
+
+        <div class="row">
+            <label>Profissão:</label><input type="text" />
+            <label>Empresa:</label><input type="text" />
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>Dados da Residência</legend>
+        <div class="row">
+            <label>Endereço:</label><input type="text" />
+            <label>Número:</label><input min="1" max="1000000" type="number" />
+        </div>
+
+        <div class="row">
+            <label>Bairro:</label><input type="text" />
+        </div>
+
+        <div class="row">
+            <label>Cidade/UF</label><input type="text" />
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>Informações de Contato</legend>
+        <div class="row">
+            <label>Celular:</label><input type="text" />
+            <label>Whatsapp:</label><input type="text" />
+        </div>
+
+        <div class="row">
+            <label>Linkedin:</label><input type="text" />
+            <label>Github:</label><input type="text" />
+        </div>
+    </fieldset>
+
+    <div class="row">
+        <button type="reset">Limpar</button>
+        <button type="submit">Enviar formulário</button>
+    </div>
+
+    <video controls>
+        <source src="clipe.mp4" />
+        <track default src="legenda-pt-br.vtt" kind="captions" srclang="pt-br" />
+    </video>
+
+    <table summary="Esta tabela se refere as idades da turma A da Dio.me" border="1" width="250" align="center">
+        <caption>Idade dos alunos da Dio.me</caption>
+        <thead>
+            <tr>
+                <th colspan="2" style="font-size: 18px;">Tabela 1</th>
+            </tr>
+            <tr>
+                <th title="Nome Completo">Nome</th>
+                <th>Idade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr id="1">
+                <td>Diogo</td>
+                <td>37</td>
+            </tr>
+            <tr id="2">
+                <td>Cristiano</td>
+                <td>49</td>
+            </tr>
+            <tr id="3">
+                <td>Elizabeth</td>
+                <td>46</td>
+            </tr>
+            <tr id="4">
+                <td>Maria</td>
+                <td>77</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td>Total alunos</td>
+            <td>4</td>
+        </tfoot>
+    </table><br>
+
+    <style>
+        #table {
+            -webkit-boo-shadow: 12px 14px 6px 6px rgba(230, 230, 230, 0.24);
+            box-shadow: 12px 14px 6px 6px rgba(230, 230, 230, 0.24);
+        }
+
+        #table td {text-align: center;}
+
+        #table {
+            border: 1px solid #ccc;
+            border-radius: 1%;
+        }
+
+        table .t-head th {
+            font-size: 22px;
+            color: dimgray;
+            background-color: lightyellow;
+        }
+
+        table .t-foot td {
+            color: blue;
+            font-weight: 600;
+            background-color: lightskyblue;
+        }
+
+        table .t-body tr:nth-child(even) {
+            background-color: dimgrey;
+            color: #fff;
+        }
+    </style>
+
+    <table id="table" width="250" cellspacing="0" cellpadding="3" align="center">
+        <!-- <caption>Tabela de idade dos alunos da Dio.me</caption> -->
+        <thead class="t-head">
+            <tr>
+                <th colspan="2" style="font-size: 18px;">Tabela 2</th>
+            </tr>
+            <tr>
+                <th title="Nome Completo">Nome</th>
+                <th>Idade</th>
+            </tr>
+        </thead>
+        <tbody class="t-body">
+            <tr id="1">
+                <td>Diogo</td>
+                <td>37</td>
+            </tr>
+            <tr id="2">
+                <td>Cristiano</td>
+                <td>49</td>
+            </tr>
+            <tr id="3">
+                <td>Elizabeth</td>
+                <td>46</td>
+            </tr>
+            <tr id="4">
+                <td>Maria</td>
+                <td>77</td>
+            </tr>
+        </tbody>
+        <tfoot class="t-foot">
+            <td>Total alunos</td>
+            <td>4</td>
+        </tfoot>
+    </table><br><br>
+    <hr>
+</body>
+
+</html>
