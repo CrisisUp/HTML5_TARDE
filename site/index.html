@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Loja Acessível</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header role="banner">
+    <nav aria-label="Navegação principal">
+      <h1>Loja Acessível</h1>
+      <ul>
+        <li><a href="#produtos">Produtos</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+      <button id="abrir-carrinho" aria-label="Abrir carrinho">🛒 <span id="contador-carrinho"
+          aria-live="polite">0</span></button>
+    </nav>
+  </header>
+
+  <!-- Carrinho -->
+  <aside id="carrinho" role="complementary" aria-label="Carrinho de compras" hidden>
+    <h2>Carrinho</h2>
+    <ul id="lista-carrinho"></ul>
+    <p id="total-carrinho">Total: R$ 0,00</p>
+    <button id="limpar-carrinho">Esvaziar Carrinho</button>
+    <button id="fechar-carrinho">Fechar</button>
+  </aside>
+
+  <main id="produtos" role="main">
+    <section aria-labelledby="titulo-produtos">
+      <h2 id="titulo-produtos">Nossos Produtos</h2>
+      <div class="grid-produtos">
+
+        <!-- Exemplo de 5 produtos -->
+        <article class="produto" tabindex="0" data-nome="Telefone infantil" data-preco="100.00"
+          aria-label="Produto: Telefone infantil">
+          <figure>
+            <img src="./img/img1.webp" alt="Telefone infantil colorido com botões interativos" />
+            <figcaption class="sr-only">Telefone infantil educativo e colorido</figcaption>
+          </figure>
+          <div class="detalhes-produto">
+            <h3 class="nome-produto">Telefone infantil</h3>
+            <p class="descricao-produto">Brinquedo educativo com luzes e sons para estimular a criatividade e
+              coordenação motora das crianças.</p>
+            <div class="rodape-produto">
+              <span class="preco" aria-label="Preço: 100 reais">R$ 100,00</span>
+              <button class="btn-comprar" aria-label="Adicionar Telefone infantil ao carrinho">Comprar</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="produto" tabindex="0" data-nome="Caminhão infantil" data-preco="150.00"
+          aria-label="Produto: Caminhão infantil">
+          <figure>
+            <img src="./img/img2.webp" alt="Caminhão infantil de brinquedo com rodas grandes e cores vibrantes" />
+            <figcaption class="sr-only">Brinquedo Caminhão infantil colorido</figcaption>
+          </figure>
+          <div class="detalhes-produto">
+            <h3 class="nome-produto">Caminhão infantil</h3>
+            <p class="descricao-produto">Brinquedo robusto e colorido que estimula a imaginação e o desenvolvimento
+              motor das crianças.</p>
+            <div class="rodape-produto">
+              <span class="preco" aria-label="Preço: 150 reais">R$ 150,00</span>
+              <button class="btn-comprar" aria-label="Adicionar Caminhão infantil ao carrinho">Comprar</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="produto" tabindex="0" data-nome="Stitch Beibi" data-preco="200.00"
+          aria-label="Produto: Stitch Baby">
+          <figure>
+            <img src="./img/img3.webp" alt="Pelúcia Stitch Baby em posição sentada com expressão fofa" />
+            <figcaption class="sr-only">Pelúcia Stitch Baby</figcaption>
+          </figure>
+          <div class="detalhes-produto">
+            <h3 class="nome-produto">Stitch Baby</h3>
+            <p class="descricao-produto">Pelúcia colecionável do personagem Stitch em versão bebê. Macia, detalhada e
+              ideal para fãs da Disney.</p>
+            <div class="rodape-produto">
+              <span class="preco" aria-label="Preço: 200 reais">R$ 200,00</span>
+              <button class="btn-comprar" aria-label="Adicionar Stitch Baby ao carrinho">Comprar</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="produto" tabindex="0" data-nome="Casinha infantil" data-preco="250.00"
+          aria-label="Produto: Casinha infantil">
+          <figure>
+            <img src="./img/img4.webp" alt="Casinha infantil de brinquedo colorida com janelas e porta" />
+            <figcaption class="sr-only">Casinha de brinquedo educativa para crianças</figcaption>
+          </figure>
+          <div class="detalhes-produto">
+            <h3 class="nome-produto">Casinha infantil</h3>
+            <p class="descricao-produto">Brinquedo educativo em formato de casinha, ideal para brincadeiras criativas e
+              desenvolvimento social.</p>
+            <div class="rodape-produto">
+              <span class="preco" aria-label="Preço: 250 reais">R$ 250,00</span>
+              <button class="btn-comprar" aria-label="Adicionar Casinha infantil ao carrinho">Comprar</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="produto" tabindex="0" data-nome="Organizador de brinquedos" data-preco="300.00"
+          aria-label="Produto: Organizador de brinquedos">
+          <figure>
+            <img src="./img/img5.webp" alt="Organizador de brinquedos infantil com várias gavetas coloridas" />
+            <figcaption class="sr-only">Organizador infantil com compartimentos para guardar brinquedos</figcaption>
+          </figure>
+          <div class="detalhes-produto">
+            <h3 class="nome-produto">Organizador de brinquedos</h3>
+            <p class="descricao-produto">Ideal para manter o quarto das crianças organizado com praticidade. Colorido,
+              leve e fácil de montar.</p>
+            <div class="rodape-produto">
+              <span class="preco" aria-label="Preço: 300 reais">R$ 300,00</span>
+              <button class="btn-comprar" aria-label="Adicionar Organizador de brinquedos ao carrinho">Comprar</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <p>&copy; 2025 Loja Acessível</p>
+  </footer>
+
+  <!-- Áudio para a notificação de adição ao carrinho -->
+  <audio id="audio-adicao" src="pop.mp3" preload="auto"></audio>
+  <audio id="audio-remocao" src="remover.mp3" preload="auto"></audio>
+  <audio id="audio-abrir" src="abrir.mp3" preload="auto"></audio>
+  <audio id="audio-fechar" src="fechar.mp3" preload="auto"></audio>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
