@@ -16,7 +16,7 @@
 }
 
 body {
-    background-image: url(./imagens/bg-desktop.jpg);
+    background-image: var(--bg-url);
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
@@ -45,9 +45,7 @@ body {
     border: 3px solid green;
 }
 
-.perfil p {
-    color: var(--text-color);
-}
+.perfil p {color: var(--text-color);}
 
 ul {
     list-style: none;
