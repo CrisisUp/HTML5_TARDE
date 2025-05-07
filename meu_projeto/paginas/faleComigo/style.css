@@ -1,0 +1,146 @@
+/* Reaproveitando os estilos globais do style.css */
+@import url("../style.css");
+
+/* Estilos específicos para a página de contato */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+body {
+    background-image: url(../../imagens/bg-desktop.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+#caixa {
+    width: 100%;
+    max-width: 660px; /* Seguindo o mesmo tamanho do layout original */
+    background: rgba(0, 0, 0, 0.5); /* Fundo com sobreposição para melhorar contraste */
+    border-radius: 15px;
+    padding: 24px;
+    margin: auto;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6); /* Sombras para destacar */
+}
+
+#perfil {
+    text-align: center;
+    padding: 24px;
+}
+
+#perfil img {
+    width: 240px;
+    margin: auto;
+    border-radius: 50%;
+    border: 3px solid green;
+}
+
+#perfil p {
+    color: white;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+h2 {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.contato {
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.contato p {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.contato a {
+    color: #66ff66; /* Verde para links */
+    text-decoration: none;
+}
+
+.contato a:hover {text-decoration: underline;}
+
+/* Formulário de contato */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+form label {
+    font-size: 16px;
+    color: white;
+}
+
+form input, form textarea {
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+form input:focus, form textarea:focus {
+    border-color: white;
+    outline: none;
+}
+
+form button {
+    display: flex;
+    font-family: "Fira Sans", sans-serif;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 24px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    text-decoration: none;
+    transition: background 0.5s;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1.5px solid white;
+    font-size: medium;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    #caixa {
+        width: 90%;
+        padding: 16px;
+    }
+
+    form input, form textarea {font-size: 14px;}
+    form button {font-size: 14px;}
+    h1 {font-size: 20px;}
+    h2 {font-size: 18px;}
+}
+
+textarea {
+    resize: vertical;
+}
+
