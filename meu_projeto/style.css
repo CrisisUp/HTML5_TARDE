@@ -34,6 +34,7 @@ body {
 }
 
 #caixa {
+    flex: 1;
     /*border: 1px solid red;*/
     width: 360px;
     height: 712px;
@@ -112,8 +113,14 @@ ul li a:hover {
     padding: 16px;
 }
 
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
 footer {
-    margin-top: 36px;
+    margin: 36px;
     padding: 16px;
     text-align: center;
     font-size: 18px;
