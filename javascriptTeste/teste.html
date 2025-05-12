@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média</title>
+    <style>
+        /* Centralizar o conteúdo da página */
+        body {
+            display: flex;
+            justify-content: center;  /* Alinha horizontalmente */
+            align-items: center;      /* Alinha verticalmente */
+            height: 100vh;            /* Usa 100% da altura da tela */
+            margin: 0;                /* Remove margem padrão do body */
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        /* Estilo para o título */
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        /* Estilo para exibir a média */
+        .resultado {
+            font-size: 1.5rem;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body onload="calcularMedia()">
+    <div>
+        <h1>Média escolar</h1>
+        <!-- Div onde a média será exibida -->
+        <div id="resultado" class="resultado"></div>
+    </div>
+
+    <script>
+        function calcularMedia() {
+            let nota1 = parseFloat(prompt("Digite a nota do primeiro bimestre: "));
+            let nota2 = parseFloat(prompt("Digite a nota do segundo bimestre: "));
+            let nota3 = parseFloat(prompt("Digite a nota do terceiro bimestre: "));
+            let nota4 = parseFloat(prompt("Digite a nota do quarto bimestre: "));
+
+            let media = (nota1 + nota2 + nota3 + nota4) / 4;
+
+            // Exibir a média no elemento da página
+            let resultadoElement = document.getElementById("resultado");
+
+            if (media <= 4) { 
+                resultadoElement.innerHTML = `Sua média foi ${media.toFixed(2)}. O aluno foi reprovado!`; 
+            } else if (media >= 7) { 
+                resultadoElement.innerHTML = `Sua média foi ${media.toFixed(2)}. O aluno foi aprovado!`; 
+            } else { 
+                resultadoElement.innerHTML = `Sua média foi ${media.toFixed(2)}. O aluno está de recuperação!`; 
+            }
+        }
+    </script>
+</body>
+
+</html>

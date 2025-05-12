@@ -5,9 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Média</title>
+     <style>
+        body {
+            display: flex;
+            justify-content: center;  /* Alinha horizontalmente */
+            align-items: center;      /* Alinha verticalmente */
+            height: 100vh;            /* Usa 100% da altura da tela */
+            margin: 0;                /* Remove margem padrão do body */
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            text-align: center; /* Centraliza o texto dentro do h1 */
+            font-size: 5rem;
+        }
+    </style>
 </head>
 
 <body onload="calcularMedia()">
+    <div>
+    <h1>Média escolar</h1>
+    </div>
     <script>
         function calcularMedia() {
             let nota1 = parseFloat(prompt("Digite a nota do primeiro bimestre: "));
@@ -18,7 +36,7 @@
             let media = parseFloat((nota1 + nota2 + nota3 + nota4) / 4);
 
             //alert("Sua média final é " + media.toFixed(2));
-            if (media <= 4) { alert("O aluno foi reprovado!") }
+            if (media <= 4) { alert("O aluno teve a média final " + media + " foi reprovado!") }
             else if (media >= 7) { alert("O aluno foi aprovado!") }
             else { alert("O aluno está de recuperação!") }
         }
